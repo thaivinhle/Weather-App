@@ -1,0 +1,137 @@
+/*Author: Thai Le; ID 934440426*/
+
+body {
+    background: #89CFF0; /* Sets the background color of the body */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets the font family */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks child elements vertically */
+    justify-content: center; /* Centers child elements vertically */
+    margin: 0; /* Removes default margin */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
+}
+
+main {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: row; /* Aligns child elements in a row */
+    align-items: center; /* Centers child elements vertically */
+    justify-content: center; /* Centers child elements horizontally */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
+}
+
+#weather-container {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background color */
+    max-width: 400px; /* Maximum width of the container */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    backdrop-filter: blur(10px); /* Blurs the background behind the container */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Semi-transparent border */
+    text-align: center; /* Centers text within the container */
+    margin: 10px; /* Adds margin to separate the two containers */
+}
+
+h2, label, p {
+    color: white; /* Sets the text color to white */
+    margin: 8px 0; /* Adds vertical margin */
+}
+
+.input-group {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Centers child elements vertically */
+    justify-content: center; /* Centers child elements horizontally */
+    margin-top: 20px; /* Adds top margin */
+}
+
+.input-group input {
+    flex: 1; /* Allows the input field to grow to fill available space */
+    padding: 8px; /* Adds padding inside the input field */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid white; /* White border */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    margin-right: 10px; /* Adds right margin */
+}
+
+.input-group select {
+    padding: 8px; /* Adds padding inside the select box */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid white; /* White border */
+    background-color: #FF8C00; /* Background color of the select box */
+    color: white; /* Text color */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+}
+
+button {
+    background-color: #ADD8E6; /* Background color of the button */
+    color: white; /* Text color */
+    padding: 10px; /* Adds padding inside the button */
+    border: none; /* Removes default border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+    margin-top: 20px; /* Adds top margin */
+    width: 100px; /* Sets the width of the button */
+    font-size: 15px; /* Font size */
+}
+
+button:hover {
+    background: #0096FF; /* Changes background color when hovering */
+}
+
+#temp-div1 p, #temp-div2 p {
+    font-size: 60px; /* Font size for temperature text */
+    margin-top: -30px; /* Negative top margin to adjust positioning */
+}
+
+#weather-info1, #weather-info2 {
+    font-size: 20px; /* Font size for weather information */
+}
+
+#weather-icon1, #weather-icon2 {
+    width: 200px; /* Width of the weather icon */
+    height: 200px; /* Height of the weather icon */
+    margin: 0 auto 10px; /* Centers the icon and adds bottom margin */
+    display: none; /* Hides the icon by default */
+}
+
+#daily-forecast-high1, #daily-forecast-high2, #daily-forecast-low1, #daily-forecast-low2, #humidity-percent1, #humidity-percent2 {
+    margin-top: 20px; /* Adds top margin */
+    overflow-x: auto; /* Adds horizontal scroll if content overflows */
+    white-space: nowrap; /* Prevents wrapping of content */
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Distributes space evenly between items */
+}
+
+.daily-item {
+    flex: 0 0 auto; /* Prevents flex-grow and flex-shrink, keeps the item's width fixed */
+    width: 80px; /* Fixed width */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks child elements vertically */
+    align-items: center; /* Centers child elements horizontally */
+    margin-right: 10px; /* Adds right margin */
+    color: white; /* Text color */
+}
+
+.daily-item img {
+    width: 30px; /* Width of the daily forecast icon */
+    height: 30px; /* Height of the daily forecast icon */
+    margin-bottom: 5px; /* Adds bottom margin */
+}
+
+.daily-heading {
+    color: white; /* Text color */
+    margin-top: 10px; /* Adds top margin */
+}
+
+#high-text1, #high-text2, #low-text1, #low-text2, #humidity-text1, #humidity-text2 {
+    margin-top: 15px; /* Adds top margin */
+    color: white; /* Text color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+}
+
+footer {
+    align-items: center; /* Centers child elements horizontally (note: flexbox is not applied here, so this might not have any effect) */
+    background-color: #6bbaff; /* Background color of the footer */
+    text-align: center; /* Centers text */
+    font-weight: bold; /* Bold text */
+    color: white; /* Text color */
+}
