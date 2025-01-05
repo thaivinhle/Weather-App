@@ -2,7 +2,7 @@
 
 // Function to get weather data for a given city and state
 function getWeather(cityId) {
-    const apiKey = '78f0ecacae8978bda3d59d8a5ade61e6'; // API key for OpenWeatherMap
+    const apiKey = '{APIKEY}'; // API key for OpenWeatherMap
     const cityInput = document.getElementById(cityId); // Gets the city input element
     const stateSelect = document.getElementById(`state${cityId.slice(-1)}`); // Gets the state select element
 
